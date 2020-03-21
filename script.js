@@ -2,13 +2,6 @@
 // based on that input and returns it
 function generatePassword() {
 
-    // Originally tried the method below, realized the confirm's needed to be further down:
-    // var passwordLength = prompt("Please choose the desired length of your password.");
-    // var passwordLowercase = confirm("Would you like to include lowercase letters?");
-    // var passwordUppercase = confirm("Would you like to include uppercase letters?");
-    // var passwordNumbers = confirm("Would you like to include numbers?");
-    // var passwordSymbols = confirm("Would you like to include special characters?");
-    
     var password = ""
     var lowercase = "abcdefghijklmnopqrstuvwxyz";
     var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -31,51 +24,15 @@ function generatePassword() {
 
     var passwordUppercase = confirm("Would you like to include uppercase letters?");
     console.log(passwordUppercase)
-    // Realized code below is redundant:
-    // if (passwordUppercase === "confirm") {
-    //     passwordUppercase = true;
-    //     return passwordUppercase;
-
-    // } else if (passwordUppercase === "cancel") {
-    //     passwordUppercase = false;
-    //     return passwordUppercase;
-    // }
 
     var passwordLowercase = confirm("Would you like to include lowercase letters?");
     console.log(passwordLowercase)
-    // Realized code below is redundant:
-    // if (passwordLowercase === "confirm") {
-    //     passwordLowercase = true;
-    //     return passwordLowercase;
-
-    // } else if (passwordLowercase === "cancel") {
-    //     passwordLowercase = false;
-    //     return passwordLowercase;
-    // }
 
     var passwordNumbers = confirm("Would you like to include numbers?");
     console.log(passwordNumbers)
-    // Realized code below is redundant:
-    // if (passwordNumbers === "confirm") {
-    //     passwordNumbers = true;
-    //     return passwordNumbers;
-
-    // } else if (passwordNumbers === "cancel") {
-    //     passwordNumbers = false;
-    //     return passwordNumbers;
-    // }
 
     var passwordSymbols = confirm("Would you like to include special characters?");
     console.log(passwordSymbols)
-    // Realized code below is redundant:
-    // if (passwordSymbols === "confirm") {
-    //     passwordSymbols = true;
-    //     return passwordSymbols;
-
-    // } else if (passwordSymbols === "cancel") {
-    //     passwordSymbols = false;
-    //     return passwordSymbols;
-    // }
 
     var passwordList = ""
     if (passwordUppercase) {
