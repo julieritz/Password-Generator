@@ -2,6 +2,7 @@
 // based on that input and returns it
 function generatePassword() {
 
+    // Originally tried the method below, realized the confirm's needed to be further down:
     // var passwordLength = prompt("Please choose the desired length of your password.");
     // var passwordLowercase = confirm("Would you like to include lowercase letters?");
     // var passwordUppercase = confirm("Would you like to include uppercase letters?");
@@ -9,7 +10,6 @@ function generatePassword() {
     // var passwordSymbols = confirm("Would you like to include special characters?");
     
     var password = ""
-
     var lowercase = "abcdefghijklmnopqrstuvwxyz";
     var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var numbers = "0123456789";
@@ -31,6 +31,7 @@ function generatePassword() {
 
     var passwordUppercase = confirm("Would you like to include uppercase letters?");
     console.log(passwordUppercase)
+    // Realized code below is redundant:
     // if (passwordUppercase === "confirm") {
     //     passwordUppercase = true;
     //     return passwordUppercase;
@@ -42,6 +43,7 @@ function generatePassword() {
 
     var passwordLowercase = confirm("Would you like to include lowercase letters?");
     console.log(passwordLowercase)
+    // Realized code below is redundant:
     // if (passwordLowercase === "confirm") {
     //     passwordLowercase = true;
     //     return passwordLowercase;
@@ -53,6 +55,7 @@ function generatePassword() {
 
     var passwordNumbers = confirm("Would you like to include numbers?");
     console.log(passwordNumbers)
+    // Realized code below is redundant:
     // if (passwordNumbers === "confirm") {
     //     passwordNumbers = true;
     //     return passwordNumbers;
@@ -64,6 +67,7 @@ function generatePassword() {
 
     var passwordSymbols = confirm("Would you like to include special characters?");
     console.log(passwordSymbols)
+    // Realized code below is redundant:
     // if (passwordSymbols === "confirm") {
     //     passwordSymbols = true;
     //     return passwordSymbols;
